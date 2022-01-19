@@ -35,6 +35,7 @@ def get_generic_path_information(paths, stat_prefix=''):
 
     for info_key in ['env_infos', 'agent_infos']:
         if info_key in paths[0]:
+            # import ipdb; ipdb.set_trace()
             all_env_infos = [
                 ppp.list_of_dicts__to__dict_of_lists(p[info_key])
                 for p in paths
